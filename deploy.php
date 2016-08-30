@@ -6,7 +6,7 @@ $BIN = "/path-to-bin"
 $STATIC = "/path-to-static-theme-files"
 
 
-    shell_exec("cd {$BIN} && rm -rf {$STATIC} && rm -rf ../var/cache/ && rm -rf ../var/generation/ && rm -rf ../var/page_cache/ && rm -rf ../var/view_preprocessed/ && php magento c:f && php magento set:st:d && php magento c:f && echo '{$COMPLETE}' >> ../shell/deploy.log");
+    shell_exec("cd {$BIN} && rm -rf {$STATIC} && rm -rf ../var/cache/ && rm -rf ../var/generation/ && rm -rf ../var/page_cache/ && rm -rf ../var/view_preprocessed/ && php magento set:up && php magento c:f &&  php magento set:st:d && php magento c:f && echo '{$COMPLETE}' >> ../shell/deploy.log");
 
 
 
